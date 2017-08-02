@@ -1,0 +1,3 @@
+$("#phrase_contents").html("<%= j render 'index' %>")
+stateObj = { params: "<%= params[:page] %>"}
+window.history.pushState( "","","<%= root_path(page:params[:page]) %>" )

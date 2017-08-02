@@ -1,0 +1,6 @@
+<%= showing_page_items(@phrases, 10) %>
+<% @phrases.each do |phrase| %>
+  <h3><%= phrase.content %></h3>
+<% end %>
+
+<%= paginate @phrases, remote: true %>
